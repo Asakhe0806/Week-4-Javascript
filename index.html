@@ -141,7 +141,7 @@
                 <!---LESSON8-->
 
                 <div class="lesson">
-                    <h2>Lesson 8: Fuction Return</h2>
+                    <h2>Lesson 8: Function Return</h2>
                     <p><Strong>Concept</Strong> Functions returning values to be used elsewhere.</p>
                     <button onclick="runlesson8()">Calculate and Display Result</button>
                     <div class="output" id="addition8">Result will show here.</div>
@@ -155,6 +155,34 @@
                         function addNumbersReturn(num1, num2) {
                             return num1 + num2;
                         }
+                    </script>
+
+                </div>
+
+
+               
+               
+               
+               
+               
+                <!--LESSON9-->
+                <div class="lesson">
+                    <h2>Lesson 9: variable Scopes</h2>
+                    <p><strong>Concept</strong> Understanding where variable can be used.</p>
+                    <button onclick="demonstrateScope()">Demonstrate variable Scope</button>
+                    <div class="output" id="scopeoutput">Click button to see variable Scope in action.</div>
+
+                    <script>
+
+                        var globalVariable = "I'm global variable";
+                        function demonstrateScope() {
+                            var localVariable = "I'm a local variable";
+                            document.getElementById("scopeOutput").innerHTML =
+                            "Global: " + globalVariable + "<br>" +
+                            "Local: " + localVariable + "<br>" +
+                            "Local variables only exist inside theie function";
+                        }
+
                     </script>
 
                 </div>
