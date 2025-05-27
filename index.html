@@ -21,7 +21,46 @@
                 
             }
         </script>
+        </div>
 
-    </div>
-</body>
+        <!--LESSON 2--->
+            
+                <div class="lesson">
+                <h2>Lesson 2: Variables (Text Storage)</h2>
+                <h2 id="heading2">Text will change</h2>
+                <p id="text2">More text here</p>
+                <button onclick="lesson2()">Use variables</button>
+                
+                <script>
+                    function lesson2(){
+                        var message1 = "Hello everyone";
+                        var message2 = "I love javascript";
+                        var message3 = "Learning Javascript its awesome";
+                        
+                        
+                        document.getElementById("heading2").innerHTML = message1;
+                        document.getElementById("text2").innerHTML = message2 +" " + message3;
+                    }
+                    
+                </script>
+            </div>
+
+            <!--LESSON3-->
+
+            <div class="lesson">
+                <h3>Lesson 3: Variables (numbers)</h3>
+                <p id="Math">Math equation will show up here</p>
+                <button onclick="lesson3()">Do Math</button>
+
+                <script>
+                    function lesson3() {
+                        var num1 = 7;
+                        var num = 10;
+                        Document.getElementById("math").innerHTML = num1 + " x " + num2 + " = " + (num1 * num2);
+                    }
+                </script>
+
+
+            </div>
+    </body>
 </html>
