@@ -254,9 +254,48 @@
 
                     <!--LESSON12-->
 
-                    <div class="lesson12">
-                        <h2></h2>
+                    <div class="lesson">
+                        <h2>Lesson 12: The Switch statement</h2>
+                        <p><strong>Concept</strong> using switch statement for multiple conditions</p>
+                        <label for="weathe12">select weather</label>
+                        <select>
+                            <option value="">Choose weather...</option>
+                            <option value="Sunny">Sunny</option>
+                            <option value="Windy">Windy</option>
+                            <option value="Rainy">Rainy</option>
+                            <option value="Snowy">Snowy</option>
 
+                        </select>
+                        <button onclick="getweatherAdvice()">Get Advice</button>
+                        <div class="output" id="advice">Select weather and click for the advice</div>
+                        <script>
+                            function getweatherAdvice() {
+                                var weather = document.getElementById("weather12").value;
+                                let advice
+
+                                switch (weatherSelected) {
+                                    case "Sunny":
+                                        advice = "Wear your sunglasses and sunscreen!";
+                                    break;
+                                        case "Rindy":
+                                            advice = "Wear a jacket and secure loose items";
+                                            
+                                            break
+                                            case "Rainy":
+                                                advice = "Dont forget an umbrella";
+
+                                                break
+                                                case "Snowy":
+                                                advice = "Bundle up and wear warm boots";
+                                                
+                                                break
+                                        default:
+                                        advice = "Please select a weather condition from the list!";
+                                }
+
+                                dopcument.getElementById("advice12").innerHTML = advice;
+                            }
+                        </script>
                     </div>
             </body>
         </html>
