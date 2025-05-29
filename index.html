@@ -210,9 +210,53 @@
                     var password = document.getElementById("passwordInput").innerHTML;
                     }  
                 </script>
-                    
-
                 </div>
+                    
+                <!----LESSON11---->
+                    <div class="lesson">
+                        <h2>Lesson 11: mini project Login Form part 2 </h2>
+                        <p><strong>Concept:</strong>Complete login verification with functions and conditionals</p>
+                        <p><em>try username: App academy,  password 12@cademy</em></e></p>
+                        <form>
+                            <label for="usernameInput11">username</label>
+                            <input type="text" id="usernameInput11"/> <br><br>
 
-    </body>
-</html>
+                            <label for="passwordInput11">password</label>
+                            <input type="password" id="passwordInput11"/> <br><br>
+                            <button type="button" 0nclick="verifyUser11()">Login</button>
+                        </form>
+                        <div class="output" id="message11"> Enter credintials and click login</div>
+
+                        <script>
+                            function verifyUser(){
+                               
+                                var username = document.getElementById("userInput11").value
+                                var password = document.getElementById("passwordInput").value
+                            }
+
+                            function checkUserCreds(username, password) {
+                                var adminUsername = "AppAcademy";  
+                                var adminPassword = "12@cademy";
+
+                                if (username == adminUsername && password == adminPassword) {
+                                    document.getElementById("message11").innerHTML = "correct. logging you in";
+
+                                } else {
+                                    document.getElementById("message11").innerHTML = "username or password is incorrect";
+                                }
+                            }
+                                
+                            
+                        </script>
+
+
+                    </div>
+
+                    <!--LESSON12-->
+
+                    <div class="lesson12">
+                        <h2></h2>
+
+                    </div>
+            </body>
+        </html>
